@@ -2,6 +2,7 @@
 Adds framework for buttons and pages for the brain screen when using vex v5 and the vscode extention or older versions of vex v5 pro.
 Note: It helps to delete the build folder every time you download code to avid errors.
 
+
 # How to Setup
 * To install the code, first copy the `brain-display.cpp` file to the `\src` folder.
 * Second, copy the `brain-display.h` file to the `\include` folder.
@@ -16,6 +17,7 @@ Note: It helps to delete the build folder every time you download code to avid e
     ```
   * In the begining of the `int main() {}`, paste this line of code: `Brain.Screen.pressed(screenCallback);`
   * Put your brain screen code after that line, inside the main function.
+
 
 # How to use
 
@@ -57,6 +59,7 @@ Note: It helps to delete the build folder every time you download code to avid e
   This structure should never be used by the user.
   
 </details>
+
 
 ## Functions
 
@@ -107,6 +110,26 @@ Note: It helps to delete the build folder every time you download code to avid e
 
 </details>
 
+
 # Images
 
 To add images to the program, first follow the instructions at [this website](https://suhjae.github.io/vex-image/). Copy the code and replace the code in the `images.cpp` file with it. Note: you can only have one image and it will take up the whole page. Make sure to add the line `#include "images.h"` at the top however.
+
+
+# Examples
+
+An example can be found in the example `main.cpp` file.
+
+
+# FAQ
+
+<details>
+  <summary>Buttons not switching page</summary>
+  
+  If the buttons are not switching the page, there are two possible reasons:
+  
+  * If the callback function is `brainScreen.switchPage`, then it may give errors. Instead, make another function in your `main.cpp` file that sends it to the particular page.
+  
+  * If the page that is being switched to has a button at the same location as the one switching the page, the brain will act like you switched the page, then pressed the button on the other page. If this button sends you back a page, then it may appear that the page was not switched.
+  
+</details>

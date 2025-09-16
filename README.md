@@ -5,7 +5,7 @@ Note: It helps to delete the build folder every time you download code to avid e
 
 # How to Setup
 * To install the code, first copy the `brain-display.cpp` file to the `\src` folder.
-* Second, copy the `brain-display.h` file to the `\include` folder.
+* Second, copy the `brain-display.h` file and the `images.h` file to the `\include` folder.
 * Next, copy the `images.cpp` file to the `\src` folder.
 * Lastly, make the following changes to the `main.cpp` file in the `\src` folder:
   * Paste `#include "brain-display.cpp"` and `BrainDisplay brainDisplay;` near the top.

@@ -109,4 +109,4 @@ Note: It helps to delete the build folder every time you download code to avid e
 
 # Images
 
-To add images to the program, first follow the instructions at [this website](https://suhjae.github.io/vex-image/). Copy the code and replace the code in the `images.cpp` file with it. Note: you can only have one image and it will take up the whole page.
+To add images to the program, first follow the instructions at [this website](https://suhjae.github.io/vex-image/). Copy the code and replace the code in the `images.cpp` file with it. Note: you can only have one image and it will take up the whole page. Make sure to add the line `#include "images.h"` at the top however.

@@ -59,7 +59,12 @@ Adds framework for buttons and pages for the brain screen when using vex v5 and 
 
 ## Functions
 
-
+<details>
+  <summary>Create Button</summary>
+  
+  The `BrainDisplay.createButton()` funtion allows you to create a button.
+  
+</details>
 
 
 
